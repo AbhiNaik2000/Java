@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vms">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VMS"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IpAddressActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".UserActivity" />
+        <activity
+            android:name=".ClientActivity"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".NewClientActivity"
+            android:parentActivityName=".ClientActivity" />
+        <activity
+            android:name=".VendorActivity"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".NewVendorActivity"
+            android:parentActivityName=".VendorActivity" />
+        <activity
+            android:name=".ContractorActivity"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".NewContractorActivity"
+            android:parentActivityName=".ContractorActivity" />
+        <activity
+            android:name=".MarketingActivity"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".NewMarketingActivity"
+            android:parentActivityName=".MarketingActivity" />
+        <activity
+            android:name=".CandidateActivity"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".NewCandidateActivity"
+            android:parentActivityName=".CandidateActivity" />
+        <activity
+            android:name=".OtherActivity"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".NewOtherActivity"
+            android:parentActivityName=".OtherActivity" />
+        <activity android:name=".InformationActivity" />
+
+    </application>
+
+</manifest>
